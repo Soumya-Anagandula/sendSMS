@@ -11,7 +11,7 @@ function validate()
       else
         {
         alert("Invalid number or message is empty");
-        location.reload();
+        //location.reload();
         return false;
         }
 }
