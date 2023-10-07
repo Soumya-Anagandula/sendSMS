@@ -21,6 +21,7 @@
         color: white;
         padding: 15px 32px;
         text-align: center;
+        border-radius: 10px;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -44,12 +45,14 @@
                   
 			</div>
 
-			<button type="submit" name="sendmsg" class="btn" onClick="sendmsg();">Send</button>
+			<button name="sendmsg" class="btn" onClick="return validate()">Send</button>
 		</form>
 	</div>
+  <script src=validation.js></script>
 </body>
 </html>
 <?php
+
 //Your authentication key
 $authKey = "407483AusVp5pui6521334bP1";
 $senderId = "sow";
@@ -95,6 +98,6 @@ if(isset($_POST['sendmsg']))
     curl_close($ch);
 
     echo '<script> alert("your message has been sent to '.$mobileNumber.'")</script>';
-    }
+   }
 
 ?>
