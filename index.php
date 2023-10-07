@@ -55,7 +55,7 @@
 
 //Your authentication key
 $authKey = "407483AusVp5pui6521334bP1";
-$senderId = "sow";
+$senderId = "sowmya";
 
 if(isset($_POST['sendmsg']))
 {
